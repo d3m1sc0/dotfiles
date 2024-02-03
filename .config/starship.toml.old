@@ -1,0 +1,32 @@
+# Move the directory to the second line
+#format = '$all$directory$character'
+
+
+# ~/.config/starship.toml
+
+[git_branch]
+symbol = '🌱 '
+
+# ~/.config/starship.toml
+
+[terraform]
+format = '[🏎💨 $version$workspace]($style) '
+
+[os]
+disabled = false
+style = "bold white"
+format = "[$symbol]($style)"
+
+[os.symbols]
+Linux = "🐧 "
+Macos = "🍎 "
+Unknown = "❓ "
+Windows = "🪟 "
+
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+vimcmd_symbol = '[❮](bold green)'
+vimcmd_replace_one_symbol = '[❮](bold purple)'
+vimcmd_replace_symbol = '[❮](bold purple)'
+vimcmd_visual_symbol = '[❮](bold yellow)'

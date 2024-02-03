@@ -1,0 +1,115 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+scroll-lines = 1
+cursorline = true
+auto-save = false
+completion-trigger-len = 1
+true-color = true
+color-modes = true
+auto-pairs = true
+#rulers = [120]
+idle-timeout = 50
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
+center = []
+right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+
+[keys.normal]
+# Mac Alt-.
+"≥" = "repeat_last_motion"
+
+# Mac Alt-` (no way to capture this; Alt-` is the same as `)
+# "???" = "switch_to_uppercase"
+
+# Mac Alt-u / Alt-U (no way to capture this; Alt-u is the same as Alt-U)
+# "¨" = "earlier"
+# "¨" = "later"
+
+# Mac Alt-d
+"∂" = "delete_selection_noyank"
+
+# Mac Alt-c
+"ç" = "change_selection_noyank"
+
+# Mac Alt-|
+"«" = "shell_pipe_to"
+
+# Mac Alt-!
+"⁄" = "shell_append_output"
+
+# Mac Alt-s
+"ß" = "split_selection_on_newline"
+
+# Mac Alt-;
+"…" = "flip_selections"
+
+# Mac Alt-:
+"Ú" = "ensure_selections_forward"
+
+# Mac Alt-,
+"≤" = "remove_primary_selection"
+
+# Mac Alt-C
+"Ç" = "copy_selection_on_prev_line"
+
+# Mac Alt-(
+"·" = "rotate_selection_contents_backward"
+
+# Mac Alt-)
+"‚" = "rotate_selection_contents_forward"
+
+# Mac Alt-x
+"≈" = "shrink_to_line_bounds"
+
+# Mac Alt-K
+"" = "remove_selections"
+
+# Mac Alt-o
+"ø" = "expand_selection"
+
+# Mac Alt-i
+"ˆ" = "shrink_selection"
+
+# Mac Alt-p
+"π" = "select_prev_sibling"
+
+# Mac Alt-n
+"˜" = "select_next_sibling"
+
+[keys.insert]
+
+# Mac Alt-d
+"∂" = "delete_word_forward"
+
+# Mac Alt-b
+"∫" = "move_prev_word_end"
+
+# Mac Alt-f
+"ƒ" = "move_next_word_start"
+
+# Mac Alt->
+"˘" = "goto_file_end"
+
+# Mac Alt-<
+"¯" = "goto_file_start"

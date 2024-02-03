@@ -1,0 +1,48 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/WORK/POSH/" . "TEMP/")
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/WORK/" . "POSH/")
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/" . "WORK/")
+ ("/Users/demetris.mina/" . "OneDrive - Richemont International SA/")
+ ("/Users/" . "demetris.mina/")
+ ("/" . "Users/")
+ ("/Users/demetris.mina/.config/" . "emacs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/demetris.mina/OneDrive - Richemont International SA/WORK/POSH/TEMP/"
+ "/Users/demetris.mina/"
+ "/Users/demetris.mina/.config/emacs/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "uuuuuuuu.ps1"
+ "adgasfas.ps1"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/WORK/POSH/TEMP/" (26017 18793 0 0) "trogrirfmpr.txt" "faséljfgb.ps1" "thrioantoirsf.ps1" "éasjnhéflaksd.ps1" "asjgfaàékd.ps1" "opforpfpf.ps1" "tesgajfdklsj.ps1" "qruyyor.txt" "srhgpfair.ps1" "ormfpyurgo.ps1" "uuuuuuuu.ps1" "omruonmo.ps1" "aésjgflaksj.ps1" "adgasfas.ps1" "dgaagvyfb.ps1" "rmqofpuis.ps1" "asfgasfga.ps1" "sdagkldj.ps1" "asdgasasd.ps1" "goahrtsmfhtrs.ps1" "mqrpropf.ps1" "asdgasgawe.ps1" "dgasdfasfas.ps1" "ANBSéFGJ.ps1" "agbaélsjhnf.ps1" "rofpyqpjmgrso.ps1" "sdagasdj.ps1" "mfqp.ps1" "rpquypqo.txt" "../" "./")
+
+ ("/Users/demetris.mina/" (26017 19166 175486 527000) "emacs.d.purcell/" "nohup.out" ".zsh_sessions/" ".viminfo" ".zcompdump-mina-WX94Y24X01-5.9.zwc" ".gitconfig" ".aws/" ".cache/" "Downloads/" ".oh-my-zsh/" ".Xauthority" ".vscode/" "Documents/" ".terraform.d/" ".tmp/" ".Trash/" "#install.txt#" ".profile" "Applications/" "Movies/" ".ssh/" ".rustup/" ".zcompdump-mina-WX94Y24X01-5.8.1.zwc" ".freerdp/" "Work/" ".zshenv" "Public/" ".cups/" ".cargo/" ".doom.d/" ".lesshst" "Library/" "Desktop/" ".zsh_history" ".emacs.d.doom/" ".zprofile" "Pictures/" ".local/" ".zcompdump-mina-WX94Y24X01-5.8.1" ".zshrc" ".zshrc.pre-oh-my-zsh" ".emacs.d.temp/" "MySQLUserCreate.sql" "MySQLUserGrants.sql" ".CFUserTextEncoding" ".DS_Store" "go/" ".terminfo/" ".vim/" "OneDrive - Richemont International SA/" ".zcompdump-mina-WX94Y24X01-5.9" "Music/" ".config/" "../" "./")
+
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/WORK/POSH/" (25526 39818 0 0) "SQL/" "LOG/" "BIN/" "TEMP/" "MISC/" "../" "./")
+
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/WORK/" (25961 35763 0 0) "SQL/" "ALI/" "_Confluence-space-SQL.html/" "BUILDING/" "VAULT/" "INCIDENTS/" "VIRIDIAN/" "VDI/" "DB Team/" "OBSIDIAN/" "AWS/" "CloudManagedServicesCouncil/" "CONFLUENCE/" "SQLMONITOR/" "DB_Engines/" "interview-questions.txt" "UNIX/" "SOLARWINDS DPA/" "ANSIBLE/" "BASH/" "RDP/" "TSQL/" "ORACLE/" "PROJECTS/" "CHANGES/" "M2C/" "POSH/" "EPM/" "GitLab/" "SQLMATRIX/" ".DS_Store" "TEMP/" "TERRAFORM/" "Misc/" "../" "./")
+
+ ("/Users/demetris.mina/OneDrive - Richemont International SA/" (26016 63542 530959 31000) ".849C9593-D756-4E56-8D6E-42412F2A707B" "Attachments/" "Documents/" ".Trash/" "WORK/" "Pictures/" "projects/" "Microsoft Teams Chat Files/" "Microsoft Teams Data/" "Demetris @ Richemont International SA.url" "Icon" ".DS_Store" "temp/" "Personal/" "Misc/" "../" "./")
+
+ ("/Users/" (25990 52351 867203 749000) "ITAdmin/" "Shared/" "demetris.mina/" ".localized" "../" "./")
+
+ ("/Users/demetris.mina/.config/emacs/" (26017 14785 453984 533000) "elpa/" "init.el" "auto-save-list/" "eln-cache/" "custom.el" "../" "./")
+
+ ("/Users/demetris.mina/.config/" (26017 14575 736285 141000) "lf/" "helix/" "kitty/" "nvim_demisco/" "wall.png" "NuGet/" "yabai/" "htop/" "freerdp/" "fontconfig/" "starship.toml.old" "emacs/" "warpd/" "skhd/" "starship.toml" "gitui/" "nvim/" "gh/" "alacritty/" "kak/" "emacs_crafted/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,23 @@
+emacsclient: can't find socket; have you started the server?
+emacsclient: To start the server in Emacs, type "M-x server-start".
+emacsclient: can't find socket; have you started the server?
+emacsclient: To start the server in Emacs, type "M-x server-start".
+Loading /Users/demetris.mina/.config/emacs/crafted-emacs/modules/crafted-early-init-config.el (source)...
+Loading /Users/demetris.mina/.config/emacs/crafted-emacs/modules/crafted-early-init-config.el (source)...done
+crafted-package-config: checking package archives
+crafted-package-config: package archives empty, initalizing
+Contacting host: melpa.org:443
+Failed to download ‘melpa’ archive.
+Contacting host: stable.melpa.org:443
+Package refresh done
+Contacting host: elpa.gnu.org:443
+Package refresh done
+Contacting host: elpa.nongnu.org:443
+Package refresh done
+crafted-package-config: package system initialized!
+emacsclient: can't find socket; have you started the server?
+emacsclient: To start the server in Emacs, type "M-x server-start".
+Loading /Users/demetris.mina/.config/emacs/crafted-emacs/modules/crafted-early-init-config.el (source)...
+Loading /Users/demetris.mina/.config/emacs/crafted-emacs/modules/crafted-early-init-config.el (source)...done
+crafted-package-config: checking package archives
+crafted-package-config: package system initialized!

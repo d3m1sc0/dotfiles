@@ -1,0 +1,13 @@
+[[language]]
+name = "pwsh"
+scope = "source.ps1"
+roots = [".git"]
+file-types = ["ps1"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "pwsh" ]
+# language-servers = [{ command = "pwsh", args = ["-NoLogo", "-NoProfile", "-Command", "/usr/local/bin/powershell-es/PowerShellEditorServices/Start-EditorServices.ps1 -BundledModulesPath /usr/local/bin/powershell-es -SessionDetailsPath /usr/local/bin/powershell-es/powershell_es.sessions.json -LogPath /usr/local/bin/powershell-es/powershell_es.log -FeatureFlags @() -AdditionalModules @() -HostName helix -HostProfileId 0 -HostVersion 1.0.0 -Stdio -LogLevel Normal"] }]
+
+[language-server.pwsh] 
+command = "pwsh"
+args = ["-NoLogo", "-NoProfile", "-Command", "/usr/local/bin/powershell-es/PowerShellEditorServices/Start-EditorServices.ps1 -BundledModulesPath /usr/local/bin/powershell-es -SessionDetailsPath /usr/local/bin/powershell-es/powershell_es.sessions.json -LogPath /usr/local/bin/powershell-es/powershell_es.log -FeatureFlags @() -AdditionalModules @() -HostName helix -HostProfileId 0 -HostVersion 1.0.0 -Stdio -LogLevel Normal"]

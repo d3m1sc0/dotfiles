@@ -1,0 +1,24 @@
+colorscheme gruvbox-dark
+
+add-highlighter global/ number-lines -hlcursor -relative -separator "  " -cursor-separator " |"
+
+add-highlighter global/ show-matching
+
+set-option global tabstop 2
+set-option global indentwidth 2
+
+map global normal <c-v> ":comment-line<ret>"
+
+map -docstring "close current buffer" global user c ":db<ret>"
+map -docstring "goto previous buffer" global user n ":bp<ret>"
+map -docstring "goto next buffer" global user o ":bn<ret>"
+
+map -docstring "copy to system pboard" global user y "<a-|> pbcopy<ret>"
+
+define-command trampoline -docstring "open a tutorial" %{
+	evaluate-commands %sh{
+		tramp_file=$(mktemp -t "kakoun-trampoline.XXXXXXXX")
+		echo "edit -fifo $tramp_file *TRAMPOLINE*"
+		curl -s https://raw.githubusercontent.com/mawww/kakoune/master/contrib/TRAMPOLINE -o "$tramp_file"
+  }
+}
