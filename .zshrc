@@ -113,7 +113,7 @@ eval "$(starship init zsh)"
 # Enable vi mode
 bindkey -v
 
-alias ll="exa -l --icons --git -a"
+alias ll="exa -l --icons --git"
 alias lt="exa --tree --level=2 --long --icons --git"
 
 alias vim="nvim"
