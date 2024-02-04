@@ -6,7 +6,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin"
+#export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
