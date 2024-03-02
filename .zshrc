@@ -4,9 +4,17 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin"
+if [[ $(uname) == "Darwin" ]]; then
+  export GOPATH=$HOME/go
+  export GOROOT="$(brew --prefix golang)/libexec"
+  export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin:${BMA_HOME:-$HOME/.bash-my-aws}/bin"
+  source ${BMA_HOME:-$HOME/.bash-my-aws}/aliases
+  autoload -U +X compinit && compinit
+  autoload -U +X bashcompinit && bashcompinit
+  source ${BMA_HOME:-$HOME/.bash-my-aws}/bash_completion.sh
+elif [[ $(uname) == "Linux" ]]; then
+  export PATH="$PATH:$HOME/.emacs.d/bin"
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,7 +82,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions aws)
 bindkey '^a' down-line-or-search
 bindkey '^i' up-line-or-search
 
