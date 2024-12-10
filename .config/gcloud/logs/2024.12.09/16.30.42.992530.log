@@ -1,0 +1,71 @@
+2024-12-09 16:30:42,993 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-09 16:30:43,004 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys']
+2024-12-09 16:30:43,005 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys', 'list']
+2024-12-09 16:30:43,011 DEBUG    root            Running [gcloud.kms.keys.list] with arguments: [--keyring: "ric-nprd-ms-playground-56f-europe-west3", --location: "europe-west3", --project: "shared-nprd-kms-bql"]
+2024-12-09 16:30:43,024 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-12-09 16:30:43,028 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-12-09 16:30:43,281 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-12-09 16:30:43,294 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    
+2024-12-09 16:30:43,295 INFO     root            Display format: "
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    "
+2024-12-09 16:30:43,298 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudkms.googleapis.com:443
+2024-12-09 16:30:43,619 DEBUG    urllib3.connectionpool https://cloudkms.googleapis.com:443 "GET /v1/projects/shared-nprd-kms-bql/locations/europe-west3/keyRings/ric-nprd-ms-playground-56f-europe-west3/cryptoKeys?alt=json&pageSize=100 HTTP/1.1" 200 None
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___ NAME
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___                                                                                                                              
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___ PURPOSE
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___           
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___ ALGORITHM
+2024-12-09 16:30:43,651 INFO     ___FILE_ONLY___                     
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ PROTECTION_LEVEL
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ LABELS
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ PRIMARY_ID
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ PRIMARY_STATE
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ 
+
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ projects/shared-nprd-kms-bql/locations/europe-west3/keyRings/ric-nprd-ms-playground-56f-europe-west3/cryptoKeys/kms-test-dmi
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___      
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ ENCRYPT_DECRYPT
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ GOOGLE_SYMMETRIC_ENCRYPTION
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ HSM
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___                        
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ 1
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___            
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ ENABLED
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ 
+
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ projects/shared-nprd-kms-bql/locations/europe-west3/keyRings/ric-nprd-ms-playground-56f-europe-west3/cryptoKeys/kms-testing-dmi
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,652 INFO     ___FILE_ONLY___ ENCRYPT_DECRYPT
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___ GOOGLE_SYMMETRIC_ENCRYPTION
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___   
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___ HSM
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___                        
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___ 1
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___            
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___ DESTROY_SCHEDULED
+2024-12-09 16:30:43,653 INFO     ___FILE_ONLY___ 
+
+2024-12-09 16:30:43,662 DEBUG    root            Metrics reporting process started...

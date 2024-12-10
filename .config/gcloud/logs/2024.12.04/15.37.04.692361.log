@@ -1,0 +1,1328 @@
+2024-12-04 15:37:04,693 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-12-04 15:37:04,701 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2024-12-04 15:37:04,701 DEBUG    root            Running [gcloud.components.update] with arguments: [--no-compile-python: "False", --quiet: "True"]
+2024-12-04 15:37:04,702 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2024-12-04 15:37:04,714 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-04 15:37:04,893 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227816
+2024-12-04 15:37:04,999 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,000 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 501.0.0
+
+2024-12-04 15:37:05,000 INFO     ___FILE_ONLY___ You will be upgraded to version: 502.0.0
+
+2024-12-04 15:37:05,000 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,000 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-12-04 15:37:05,001 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────────────┐
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ │            These components will be updated.            │
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ ├─────────────────────────────────┬────────────┬──────────┤
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ │               Name              │  Version   │   Size   │
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ ├─────────────────────────────────┼────────────┼──────────┤
+2024-12-04 15:37:05,009 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ Google Cloud CLI Core Libraries
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ 2024.11.15
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ 20.4 MiB
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ │
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ └─────────────────────────────────┴────────────┴──────────┘
+2024-12-04 15:37:05,010 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,010 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────────────────────────┐
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │                 These components will be installed.                 │
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┬────────────┬──────────┤
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │                     Name                    │  Version   │   Size   │
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ ├─────────────────────────────────────────────┼────────────┼──────────┤
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ Minikube (Platform Specific)               
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___     1.34.0
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 37.2 MiB
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ gcloud cli dependencies (Platform Specific)
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 2021.04.16
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │ 
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  < 1 MiB
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ │
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ └─────────────────────────────────────────────┴────────────┴──────────┘
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,011 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,013 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-04 15:37:05,204 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1314602
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ The following release notes are new in this upgrade.
+Please read carefully for information about new features, breaking changes,
+and bugs fixed.  The latest full release notes can be viewed at:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ 502.0.0 (2024-11-19)
+
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ AI
+
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,401 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ machine-type
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ ai
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ index-endpoints
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ mutate-deployed-index.
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ --psc-automation-configs
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,402 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ ai
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ index-endpoints
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ deploy-index
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ Private
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ Service
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ Connect
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ automation.
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___ AlloyDB
+
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,403 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ export
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ command
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ exporting
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ data
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ from
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ an
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ AlloyDB
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ cluster
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ Google
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ Cloud
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,404 INFO     ___FILE_ONLY___ Storage
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ in
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ alpha
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ tracks.
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ Cloud Backup DR
+
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ Promoted
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-dr
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-vaults,
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-dr
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-plans,
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-dr
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___ backup-plan-associations,
+2024-12-04 15:37:05,405 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ backup-dr
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ backups
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ backup-dr
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ data-sources
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ command
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ groups
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ GA.
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ Cloud Identity-Aware Proxy
+
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ Promoted
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ iap
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ web
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ enable/disable
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,406 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ GA.
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ --region
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ --resource-type=backend-services.
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ Cloud SQL
+
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ --failover-dr-replica-name
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ --clear-failover-dr-replica-name
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ flags
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ sql
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ instances
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ patch
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,407 INFO     ___FILE_ONLY___ command.
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ These
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ flags
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ can
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ be
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ used
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ set
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ unset
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ a
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ disaster
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ recovery
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ replica
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ a
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ Cloud
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ SQL
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ primary
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ instance.
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ Add
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ --[no-]enable-private-service-connect
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,408 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ sql
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ instances
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ patch
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ command
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ enabling
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ disabling
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Private
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Service
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Connect
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Cloud
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ SQL
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ instances.
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Compute Engine
+
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,409 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ --require-specific-reservation
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ update.
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ --reservation-name
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,410 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ update.
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ --deployment-type
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,411 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ update.
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ --scheduling-type
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ reservations
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ update.
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,412 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ Support
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ --provisioning-model=reservation-bound
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ in
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ instances
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ create,
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ instances
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ bulk
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ create,
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ instance-templates
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ commands.
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ compute
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___ disks
+2024-12-04 15:37:05,413 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ convert
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ command.
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ Eventarc
+
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ --labels
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ triggers
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ triggers
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ update
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ labelling
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ Eventarc
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ triggers.
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,414 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ --labels
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ message-buses
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ message-buses
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ update
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ labelling
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ Eventarc
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ message
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ buses.
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,415 INFO     ___FILE_ONLY___ --labels
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ google-api-sources
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ create
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ eventarc
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ google-api-sources
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ update
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ labelling
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ Eventarc
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ Google
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ API
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ sources.
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,416 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ GKE Hub
+
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ support
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ stopping
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ and
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ resuming
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ syncing
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ configs
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ beta
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ container
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ fleet
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ config-management
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ apply
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ through
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ a
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ new
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ Boolean
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ field
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ configSync.stopSyncing
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___ in
+2024-12-04 15:37:05,417 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ the
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ config
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ file
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ specified
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ in
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ --config.
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ Identity and Access Management
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ iam
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ oauth-clients
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ commands
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ OAuth
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ application
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ integration
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ Workforce
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ Identity
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ Federation
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ management.
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,418 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ Network Connectivity
+
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ --group
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ for
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ hybrid
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ spokes.
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___   
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ Network Management
+
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___       ▪
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ Added
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ --destination-fqdn
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ flag
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,419 INFO     ___FILE_ONLY___ gcloud
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ network-management
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ connectivity-tests
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ allow
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ executing
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ Connectivity
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ tests
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ DNS
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___         
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ endpoint
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ of
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,420 INFO     ___FILE_ONLY___ Google
+2024-12-04 15:37:05,422 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,422 INFO     ___FILE_ONLY___ Kubernetes
+2024-12-04 15:37:05,422 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,422 INFO     ___FILE_ONLY___ Engine
+2024-12-04 15:37:05,422 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ cluster
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ control
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ plane.
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___    
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ Subscribe
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ to
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ these
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ release
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ notes
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___  
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ at
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___     
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ https://groups.google.com/forum/#!forum/google-cloud-sdk-announce
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___     
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ (https://groups.google.com/forum/#!forum/google-cloud-sdk-announce).
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+2024-12-04 15:37:05,423 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:05,424 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2024-12-04 15:37:05,431 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:05,433 INFO     ___FILE_ONLY___ ╠═ Downloading: Google Cloud CLI Core Libraries             ═╣
+
+2024-12-04 15:37:05,433 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:05,436 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-04 15:37:05,650 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-core-20241115154308.tar.gz HTTP/1.1" 200 21438128
+2024-12-04 15:37:06,826 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,827 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,827 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,827 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,827 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,828 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,828 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,828 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,828 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,829 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,829 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,829 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,829 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,830 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,830 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,830 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,830 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,831 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,831 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,831 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,831 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,832 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,832 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,834 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,834 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,834 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,834 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,835 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,835 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,835 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,835 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,836 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,836 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,836 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,836 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,837 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,837 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,837 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,837 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,838 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,838 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,838 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,838 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,839 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,839 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,839 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,842 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,842 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,842 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,842 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,843 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,843 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,843 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,844 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,844 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,844 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,844 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,844 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,845 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,845 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:06,845 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:06,855 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:06,856 INFO     ___FILE_ONLY___ ╠═ Downloading: Minikube (Platform Specific)                ═╣
+
+2024-12-04 15:37:06,856 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:06,867 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-04 15:37:07,061 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-minikube-darwin-arm-20240927140238.tar.gz HTTP/1.1" 200 38981244
+2024-12-04 15:37:09,104 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,104 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,105 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,105 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,106 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,106 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,107 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,107 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,108 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,108 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,108 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,109 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,110 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,111 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,111 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,112 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,112 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,113 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,114 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,116 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,117 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,118 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,118 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,119 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,119 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,123 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,124 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,124 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,124 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,125 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,125 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,126 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,126 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,127 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,127 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,128 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,130 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,130 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,134 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,134 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,134 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,135 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,135 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,136 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,136 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,137 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,137 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,138 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,138 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,139 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,139 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,144 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,144 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,145 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,145 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,146 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,146 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,146 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,147 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,147 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,147 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:09,162 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:09,162 INFO     ___FILE_ONLY___ ╠═ Downloading: gcloud cli dependencies (Platform Specific) ═╣
+
+2024-12-04 15:37:09,162 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:09,168 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-12-04 15:37:09,406 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gcloud-deps-darwin-x86_64-20210416153011.tar.gz HTTP/1.1" 200 105
+2024-12-04 15:37:09,409 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-12-04 15:37:09,409 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:09,427 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:09,427 INFO     ___FILE_ONLY___ ╠═ Uninstalling: Google Cloud CLI Core Libraries            ═╣
+
+2024-12-04 15:37:09,427 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:09,479 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,510 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,542 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,589 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,636 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,687 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,733 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,765 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,813 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,845 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,877 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,908 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,938 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:09,976 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,023 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,061 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,092 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,133 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,165 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,200 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,232 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,263 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,294 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,322 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,371 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,408 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,437 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,467 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,500 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,540 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,567 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,596 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,622 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,647 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,674 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,712 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,742 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,773 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,808 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,836 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,862 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,887 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,913 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,941 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,966 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:10,994 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,020 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,046 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,075 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,105 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,134 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,159 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,183 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,207 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,234 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,259 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,285 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,313 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,339 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,366 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:11,366 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:11,881 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:11,881 INFO     ___FILE_ONLY___ ╠═ Installing: Google Cloud CLI Core Libraries              ═╣
+
+2024-12-04 15:37:11,881 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:12,526 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,586 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,663 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,719 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,776 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,848 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,907 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:12,969 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,027 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,084 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,146 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,204 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,265 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,327 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,402 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,524 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,626 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,720 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,794 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,876 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:13,989 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,063 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,127 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,179 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,227 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,274 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,321 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,384 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,448 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,504 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,561 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,622 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,679 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,738 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,829 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,894 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:14,952 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,011 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,068 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,135 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,208 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,290 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,404 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,493 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,564 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,627 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,713 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,790 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,876 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:15,981 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,064 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,138 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,214 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,299 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,378 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,451 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,526 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,599 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,672 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,749 INFO     ___FILE_ONLY___ ═
+2024-12-04 15:37:16,749 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:16,930 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:16,930 INFO     ___FILE_ONLY___ ╠═ Installing: Minikube (Platform Specific)                 ═╣
+
+2024-12-04 15:37:16,930 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:17,360 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-12-04 15:37:17,361 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:17,380 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-12-04 15:37:17,380 INFO     ___FILE_ONLY___ ╠═ Installing: gcloud cli dependencies (Platform Specific)  ═╣
+
+2024-12-04 15:37:17,380 INFO     ___FILE_ONLY___ ╚
+2024-12-04 15:37:17,380 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-12-04 15:37:17,380 INFO     ___FILE_ONLY___ ╝
+
+2024-12-04 15:37:17,385 DEBUG    root            Updating notification cache...
+2024-12-04 15:37:17,385 INFO     ___FILE_ONLY___ 
+
+2024-12-04 15:37:17,391 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-12-04 15:37:17,392 DEBUG    root            Executing command: ['/Users/demetris.mina/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin/gcloud', 'components', 'post-process', '--no-compile-python']
+2024-12-04 15:37:18,379 DEBUG    ___FILE_ONLY___ 
+2024-12-04 15:37:18,380 DEBUG    ___FILE_ONLY___ 
+2024-12-04 15:37:18,405 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-12-04 15:37:18,405 INFO     ___FILE_ONLY___ To revert your CLI to the previously installed version, you may run:
+  $ gcloud components update --version 501.0.0
+
+
+2024-12-04 15:37:18,407 WARNING  root              There are other instances of Google Cloud tools on your system PATH.
+  Please remove the following to avoid confusion or accidental invocation:
+
+  /opt/homebrew/share/google-cloud-sdk/bin/docker-credential-gcloud
+/opt/homebrew/share/google-cloud-sdk/bin/gcloud
+
+  
+2024-12-04 15:37:18,409 DEBUG    root            Chosen display Format:none
+2024-12-04 15:37:18,409 INFO     root            Display format: "none"
+2024-12-04 15:37:18,414 DEBUG    root            Metrics reporting process started...

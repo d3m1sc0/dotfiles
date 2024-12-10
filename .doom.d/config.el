@@ -96,3 +96,50 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+
+;; OPTIONAL configuration
+(setq-default
+ gptel-model "codellama:latest"
+ gptel-backend (gptel-make-ollama "Ollama"
+                 :host "localhost:11434"
+                 :stream t
+                 :models '("codellama:latest")))
+
+
+
+
+(require 'pulsar)
+
+;; Check the default value of `pulsar-pulse-functions'.  That is where
+;; you add more commands that should cause a pulse after they are
+;; invoked
+
+(setq pulsar-pulse t)
+(setq pulsar-delay 0.5)
+(setq pulsar-iterations 10)
+(setq pulsar-face 'pulsar-magenta)
+(setq pulsar-highlight-face 'pulsar-yellow)
+
+(pulsar-global-mode 1)
+
+
+
+
+(defun move-line-up ()
+  "Move up the current line."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2)
+  (indent-according-to-mode))
+
+(defun move-line-down ()
+  "Move down the current line."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(global-set-key [(meta shift up)]  'move-line-up)
+(global-set-key [(meta shift down)]  'move-line-down)

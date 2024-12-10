@@ -1,0 +1,28 @@
+2024-12-02 11:42:40,142 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-02 11:42:40,173 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys']
+2024-12-02 11:42:40,174 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys', 'list']
+2024-12-02 11:42:40,188 DEBUG    root            Running [gcloud.kms.keys.list] with arguments: [--keyring: "ric-nprd-ms-playground-56f-europe-west3", --location: "europe-west3", --project: "shared-nprd-kms-bql"]
+2024-12-02 11:42:40,205 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    
+2024-12-02 11:42:40,206 INFO     root            Display format: "
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    "
+2024-12-02 11:42:40,210 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudkms.googleapis.com:443
+2024-12-02 11:42:40,548 DEBUG    urllib3.connectionpool https://cloudkms.googleapis.com:443 "GET /v1/projects/shared-nprd-kms-bql/locations/europe-west3/keyRings/ric-nprd-ms-playground-56f-europe-west3/cryptoKeys?alt=json&pageSize=100 HTTP/1.1" 200 None
+2024-12-02 11:42:40,553 INFO     ___FILE_ONLY___ Listed 0 items.
+

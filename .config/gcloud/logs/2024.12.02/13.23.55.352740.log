@@ -1,0 +1,31 @@
+2024-12-02 13:23:55,353 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-02 13:23:55,367 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys']
+2024-12-02 13:23:55,368 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys', 'list']
+2024-12-02 13:23:55,403 DEBUG    root            Running [gcloud.kms.keys.list] with arguments: [--keyring: "ric-nprd-ms-playground-56f-europe-west3", --location: "europe-west3", --project: "shared-nprd-kms-bql"]
+2024-12-02 13:23:55,420 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-12-02 13:23:55,425 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-12-02 13:23:55,688 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-12-02 13:23:55,703 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    
+2024-12-02 13:23:55,704 INFO     root            Display format: "
+        table(
+          name,
+          purpose,
+          version_template.algorithm,
+          version_template.protection_level,
+          labels.list(),
+          primary.name.segment(9):label=PRIMARY_ID,
+          primary.state:label=PRIMARY_STATE)
+    "
+2024-12-02 13:23:55,706 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudkms.googleapis.com:443
+2024-12-02 13:23:56,001 DEBUG    urllib3.connectionpool https://cloudkms.googleapis.com:443 "GET /v1/projects/shared-nprd-kms-bql/locations/europe-west3/keyRings/ric-nprd-ms-playground-56f-europe-west3/cryptoKeys?alt=json&pageSize=100 HTTP/1.1" 200 None
+2024-12-02 13:23:56,005 INFO     ___FILE_ONLY___ Listed 0 items.
+

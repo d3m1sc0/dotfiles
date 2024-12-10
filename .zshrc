@@ -116,14 +116,27 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
 
 
 # Enable vi mode
 bindkey -v
 
-alias ll="exa -l --icons --git"
-alias lt="exa --tree --level=2 --long --icons --git"
+alias ll="eza -l --icons --git"
+alias lt="eza --tree --level=2 --long --icons --git"
 
 alias vim="nvim"
 
 # alias emacs="nohup emacsclient -c -a 'emacs' > /dev/null 2>&1 &"
+
+# Bind ctrl-r but not up arrow
+eval "$(atuin init zsh --disable-up-arrow)"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
+source ~/work/dbautils/rds/bin/rds.sh
+
+
+p () {
+  cd $(find ~/work/gitlab -maxdepth 1 -type d | fzf)
+}

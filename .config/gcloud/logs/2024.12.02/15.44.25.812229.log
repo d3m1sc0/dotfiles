@@ -1,0 +1,52 @@
+2024-12-02 15:44:25,815 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-12-02 15:44:25,818 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2024-12-02 15:44:25,829 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'list']
+2024-12-02 15:44:25,834 DEBUG    root            Running [gcloud.iam.service-accounts.list] with arguments: []
+2024-12-02 15:44:25,834 DEBUG    root            Chosen display Format:table(displayName:label="DISPLAY NAME", email, disabled)
+2024-12-02 15:44:25,835 INFO     root            Display format: "table(displayName:label="DISPLAY NAME", email, disabled)"
+2024-12-02 15:44:25,835 DEBUG    root            (gcloud.iam.service-accounts.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 845, in Run
+    display_info=self.ai.display_info).Display()
+                                       ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 487, in Display
+    self._printer.Print(self._resources)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 301, in Print
+    for resource in resources:
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/surface/iam/service_accounts/list.py", line 57, in Run
+    project = properties.VALUES.core.project.Get(required=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4152, in Get
+    property_value = self.GetPropertyValue(required, validate)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4171, in GetPropertyValue
+    property_value = _GetProperty(self,
+                     ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4504, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2024-12-02 15:44:25,838 ERROR    root            (gcloud.iam.service-accounts.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]

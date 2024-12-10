@@ -1,0 +1,46 @@
+2024-12-02 15:51:48,819 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-02 15:51:48,831 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings']
+2024-12-02 15:51:48,832 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'list']
+2024-12-02 15:51:48,837 DEBUG    root            Running [gcloud.kms.keyrings.list] with arguments: [--location: "europe-west3", --project: "shared-nprd-kms-bql"]
+2024-12-02 15:51:48,852 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-12-02 15:51:48,860 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-12-02 15:51:49,114 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-12-02 15:51:49,123 DEBUG    root            Chosen display Format:table(name)
+2024-12-02 15:51:49,124 INFO     root            Display format: "table(name)"
+2024-12-02 15:51:49,128 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudkms.googleapis.com:443
+2024-12-02 15:51:49,618 DEBUG    urllib3.connectionpool https://cloudkms.googleapis.com:443 "GET /v1/projects/shared-nprd-kms-bql/locations/europe-west3/keyRings?alt=json&pageSize=100 HTTP/1.1" 403 None
+2024-12-02 15:51:49,622 DEBUG    root            (gcloud.kms.keyrings.list) PERMISSION_DENIED: Permission 'cloudkms.keyRings.list' denied on resource 'projects/shared-nprd-kms-bql/locations/europe-west3' (or it may not exist). This command is authenticated as demetris.mina@richemont.com which is the active account specified by the [core/account] property.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 845, in Run
+    display_info=self.ai.display_info).Display()
+                                       ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 487, in Display
+    self._printer.Print(self._resources)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 301, in Print
+    for resource in resources:
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudkms/v1/cloudkms_v1_client.py", line 1467, in List
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://cloudkms.googleapis.com/v1/projects/shared-nprd-kms-bql/locations/europe-west3/keyRings?alt=json&pageSize=100>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Mon, 02 Dec 2024 14:51:49 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission 'cloudkms.keyRings.list' denied on resource 'projects/shared-nprd-kms-bql/locations/europe-west3' (or it may not exist).",
+    "status": "PERMISSION_DENIED"
+  }
+}
+>
+2024-12-02 15:51:49,628 ERROR    root            (gcloud.kms.keyrings.list) PERMISSION_DENIED: Permission 'cloudkms.keyRings.list' denied on resource 'projects/shared-nprd-kms-bql/locations/europe-west3' (or it may not exist). This command is authenticated as demetris.mina@richemont.com which is the active account specified by the [core/account] property.

@@ -1,0 +1,7 @@
+2024-12-02 18:19:59,912 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-02 18:19:59,925 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings']
+2024-12-02 18:19:59,926 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'describe']
+2024-12-02 18:19:59,937 ERROR    root            (gcloud.kms.keyrings.describe) unrecognized arguments: --keyring 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

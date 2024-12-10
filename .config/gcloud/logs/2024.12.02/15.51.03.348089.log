@@ -1,0 +1,55 @@
+2024-12-02 15:51:03,348 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-02 15:51:03,364 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings']
+2024-12-02 15:51:03,365 DEBUG    root            Running [gcloud.kms.keyrings] with arguments: [--help: "None"]
+2024-12-02 15:51:03,366 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/surface/kms/keyrings/config]
+2024-12-02 15:51:03,366 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'describe']
+2024-12-02 15:51:03,381 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'get_iam_policy']
+2024-12-02 15:51:03,402 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'add_iam_policy_binding']
+2024-12-02 15:51:03,407 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'remove_iam_policy_binding']
+2024-12-02 15:51:03,411 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'list']
+2024-12-02 15:51:03,412 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'set_iam_policy']
+2024-12-02 15:51:03,413 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keyrings', 'create']
+2024-12-02 15:51:03,418 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2024-12-02 15:51:03,419 INFO     ___FILE_ONLY___ [m[1mNAME[m
+    gcloud kms keyrings - create and manage keyrings
+
+[m[1mSYNOPSIS[m
+    [1mgcloud kms keyrings[m [4mCOMMAND[m [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    A keyring is a toplevel logical grouping of keys.
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --help.
+
+    Run [1m$ gcloud help[m for details.
+
+[m[1mCOMMANDS[m
+    [1m[1;4mCOMMAND[1m[m is one of the following:
+
+     [1madd-iam-policy-binding[m
+        Add IAM policy binding for a kms keyring.
+
+     [1mcreate[m
+        Create a new keyring.
+
+     [1mdescribe[m
+        Get metadata for a keyring.
+
+     [1mget-iam-policy[m
+        Get the IAM policy for a keyring.
+
+     [1mlist[m
+        List keyrings within a location.
+
+     [1mremove-iam-policy-binding[m
+        Remove IAM policy binding for a kms keyring.
+
+     [1mset-iam-policy[m
+        Set the IAM policy for a keyring.
+[m
+2024-12-02 15:51:23,407 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

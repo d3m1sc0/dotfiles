@@ -1,0 +1,134 @@
+2024-12-03 07:49:51,111 DEBUG    root            Loaded Command Group: ['gcloud', 'kms']
+2024-12-03 07:49:51,125 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys']
+2024-12-03 07:49:51,126 DEBUG    root            Loaded Command Group: ['gcloud', 'kms', 'keys', 'list']
+2024-12-03 07:49:51,170 DEBUG    root            Running [gcloud.kms.keys.list] with arguments: [--keyring: "ric-nprd-ms-playground-56f-europe-west3", --location: "europe-west3", --project: "shared-nprd-kms-bql"]
+2024-12-03 07:49:51,186 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-12-03 07:49:51,202 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-12-03 07:49:51,435 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 400 None
+2024-12-03 07:49:51,437 DEBUG    root            using google-auth reauth
+2024-12-03 07:49:51,438 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-12-03 07:49:51,499 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-12-03 07:49:51,501 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions:start
+2024-12-03 07:49:51,504 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): reauth.googleapis.com:443
+2024-12-03 07:49:52,020 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions:start HTTP/1.1" 200 None
+2024-12-03 07:49:52,022 DEBUG    root            (gcloud.kms.keys.list) Please run:
+
+  $ gcloud auth login
+
+to complete reauthentication.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 104, in refresh
+    return self._Refresh(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 175, in _Refresh
+    access_token, refresh_token, expiry, grant_response = _RefreshGrant(
+                                                          ^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 270, in _RefreshGrant
+    response_data = _TokenEndpointRequestWithRetry(request, token_uri, body)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 307, in DecoratedFunction
+    return retryer.RetryOnException(f, args=args, kwargs=kwargs,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 201, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 182, in TryFunc
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 331, in _TokenEndpointRequestWithRetry
+    _HandleErrorResponse(response_body)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 358, in _HandleErrorResponse
+    raise ReauthRequiredError('reauth is required.')
+googlecloudsdk.core.credentials.google_auth_credentials.ReauthRequiredError: reauth is required.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1204, in HandleGoogleAuthCredentialsRefreshError
+    yield
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1338, in _RefreshGoogleAuth
+    credentials.refresh(request_client)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/creds.py", line 962, in _WrappedRefresh
+    orig_refresh(request)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py", line 122, in refresh
+    self._rapt_token = google_auth_reauth.get_rapt_token(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/google/oauth2/reauth.py", line 276, in get_rapt_token
+    rapt_token = _obtain_rapt(request, access_token, requested_scopes=scopes)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/google/oauth2/reauth.py", line 233, in _obtain_rapt
+    msg = _run_next_challenge(msg, request, access_token)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/google/oauth2/reauth.py", line 179, in _run_next_challenge
+    client_input = c.obtain_challenge_input(challenge)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/third_party/google/oauth2/challenges.py", line 275, in obtain_challenge_input
+    raise exceptions.ReauthSamlChallengeFailError(SAML_CHALLENGE_MESSAGE)
+google.auth.exceptions.ReauthSamlChallengeFailError: Reauthentication failed. Please run `gcloud auth login` to complete reauthentication with SAML.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/surface/kms/keys/list.py", line 59, in Run
+    client = cloudkms_base.GetClientInstance()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudkms/base.py", line 29, in GetClientInstance
+    return apis.GetClientInstance(DEFAULT_API_NAME, DEFAULT_API_VERSION)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 270, in GetClientInstance
+    return apis_internal._GetClientInstance(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 169, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 80, in GetApitoolsTransport
+    session = requests.GetSession(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 82, in GetSession
+    session = request_wrapper.WrapQuota(session, enable_resource_quota,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 127, in WrapQuota
+    quota_project = self.QuotaProject(enable_resource_quota,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transport.py", line 54, in QuotaProject
+    creds = store.LoadIfEnabled(allow_account_impersonation, use_google_auth)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 636, in LoadIfEnabled
+    return Load(
+           ^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 876, in Load
+    cred = _Load(
+           ^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1093, in _Load
+    RefreshIfAlmostExpire(cred)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1451, in RefreshIfAlmostExpire
+    RefreshIfExpireWithinWindow(credentials, window=_CREDENTIALS_EXPIRY_WINDOW)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1447, in RefreshIfExpireWithinWindow
+    Refresh(credentials)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1133, in Refresh
+    _RefreshGoogleAuth(credentials, is_impersonated_credential,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1304, in _RefreshGoogleAuth
+    with HandleGoogleAuthCredentialsRefreshError(
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/502.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1206, in HandleGoogleAuthCredentialsRefreshError
+    raise creds_exceptions.WebLoginRequiredReauthError(for_adc=for_adc)
+googlecloudsdk.core.credentials.exceptions.WebLoginRequiredReauthError: Please run:
+
+  $ gcloud auth login
+
+to complete reauthentication.
+2024-12-03 07:49:52,037 ERROR    root            (gcloud.kms.keys.list) Please run:
+
+  $ gcloud auth login
+
+to complete reauthentication.
